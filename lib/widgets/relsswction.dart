@@ -34,7 +34,7 @@ class _RelSectionState extends State<RelSection> with SingleTickerProviderStateM
 
           controller: tabController,
           indicatorColor: Colors.white,
-          tabs: [
+          tabs: const [
             Tab(icon: Icon(Icons.apps, color: Colors.white)),
             Tab(icon: Icon(Icons.movie_creation_outlined, color: Colors.white)),
             Tab(icon: Icon(Icons.account_box_outlined, color: Colors.white)),
@@ -48,7 +48,7 @@ class _RelSectionState extends State<RelSection> with SingleTickerProviderStateM
             children: [
               GridView.builder(
                 shrinkWrap: true,
-                gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                   crossAxisCount: 3,
                   crossAxisSpacing: 1,
                   mainAxisSpacing: 1,
@@ -69,8 +69,8 @@ class _RelSectionState extends State<RelSection> with SingleTickerProviderStateM
                   );
                 },
               ),
-              Center(child: Text("المتابَعين",style: TextStyle(color: Colors.white),)),
-              Center(child: Text("الملف الشخصي",style: TextStyle(color: Colors.white),)),
+              const Center(child: Text("المتابَعين",style: TextStyle(color: Colors.white),)),
+              const Center(child: Text("الملف الشخصي",style: TextStyle(color: Colors.white),)),
             ],
           ),
         ),

@@ -11,8 +11,8 @@ class profilescreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.black,
-      appBar: CustomAppBar(),
-      body:  SingleChildScrollView(
+      appBar: const CustomAppBar(),
+      body: SingleChildScrollView(
         child: Padding(
           padding: const EdgeInsets.all(8.0),
           child: Column(
@@ -27,7 +27,8 @@ class profilescreen extends StatelessWidget {
                     children: [
                       CircleAvatar(
                         radius: 50,
-                        backgroundImage: NetworkImage('https://c.top4top.io/p_327658u7r1.jpg'),
+                        backgroundImage: NetworkImage(
+                            'https://c.top4top.io/p_327658u7r1.jpg'),
                       ),
                       CircleAvatar(
                         radius: 15,
@@ -46,7 +47,10 @@ class profilescreen extends StatelessWidget {
                     children: [
                       Text(
                         "79",
-                        style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Colors.white),
+                        style: TextStyle(
+                            fontSize: 20,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.white),
                       ),
                       Text(
                         'posts',
@@ -60,7 +64,10 @@ class profilescreen extends StatelessWidget {
                     children: [
                       Text(
                         "633",
-                        style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Colors.white),
+                        style: TextStyle(
+                            fontSize: 20,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.white),
                       ),
                       Text(
                         'followers',
@@ -74,7 +81,10 @@ class profilescreen extends StatelessWidget {
                     children: [
                       Text(
                         "1919",
-                        style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Colors.white),
+                        style: TextStyle(
+                            fontSize: 20,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.white),
                       ),
                       Text(
                         'following',
@@ -89,13 +99,41 @@ class profilescreen extends StatelessWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text("Software Engineer 👨‍💻", style: TextStyle(color: Colors.white, fontSize: 12)),
-                    Text("Supports Al-Ahly Egyptian Club ⚽", style: TextStyle(color: Colors.white, fontSize: 12)),
-                    Text("Works at El-Faddaly For Landscaping 🌱", style: TextStyle(color: Colors.white, fontSize: 12)),
-                    Text("Phone number: 01090438638 📞", style: TextStyle(color: Colors.white, fontSize: 12)),
-                    Text("Engaged and will marry in June 2025 💍", style: TextStyle(color: Colors.white, fontSize: 12)),
-
-
+                    Text(
+                      "Software Engineer 👨‍💻",
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 12,
+                      ),
+                    ),
+                    Text(
+                      "Supports Al-Ahly Egyptian Club ⚽",
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 12,
+                      ),
+                    ),
+                    Text(
+                      "Works at El-Faddaly For Landscaping 🌱",
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 12,
+                      ),
+                    ),
+                    Text(
+                      "Phone number: 01090438638 📞",
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 12,
+                      ),
+                    ),
+                    Text(
+                      "Engaged and will marry in June 2025 💍",
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 12,
+                      ),
+                    ),
                   ],
                 ),
               ),
@@ -139,27 +177,30 @@ class profilescreen extends StatelessWidget {
               Row(
                 children: [
                   Expanded(
-                    child: CustomElevatedButton(inbutton:  const Text(
+                      child: CustomElevatedButton(
+                    inbutton: const Text(
                       "Edit profile",
                       style: TextStyle(color: Colors.white),
-                    ),)
-                  ),
+                    ),
+                  )),
                   const SizedBox(width: 8),
                   Expanded(
-                    child: CustomElevatedButton(inbutton: Text(
-                      "Share profile",
-                      style: TextStyle(color: Colors.white),
-                    ),),
+                    child: CustomElevatedButton(
+                      inbutton: const Text(
+                        "Share profile",
+                        style: TextStyle(color: Colors.white),
+                      ),
+                    ),
                   ),
                   const SizedBox(width: 8),
-                  CustomElevatedButton(inbutton: Icon(Icons.person_add_alt),),
+                  CustomElevatedButton(
+                    inbutton: const Icon(Icons.person_add),
+                  ),
                 ],
               ),
               const SizedBox(height: 15),
               const Stores(),
               const RelSection(),
-
-
             ],
           ),
         ),

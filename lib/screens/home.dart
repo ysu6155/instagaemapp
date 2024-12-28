@@ -6,6 +6,9 @@ import 'serachscreen.dart';
 
 
 class home extends StatefulWidget {
+  const home({super.key});
+
+
   @override
    _ProfilePageState createState() => _ProfilePageState();
 }
@@ -35,7 +38,7 @@ class _ProfilePageState extends State<home> with SingleTickerProviderStateMixin 
 
      body: TabBarView(
           controller: tabController1,
-          children: [
+          children: const [
             InstaHome(),
             SearchPage(),
             Scaffold(),
@@ -47,7 +50,7 @@ class _ProfilePageState extends State<home> with SingleTickerProviderStateMixin 
 
       dividerHeight: 0,
       controller: tabController1,
-      tabs: [
+      tabs: const [
         Tab(icon: Icon(Icons.home_outlined, color: Colors.white),),
         Tab(icon: Icon(Icons.search, color: Colors.white)),
         Tab(icon: Icon(Icons.add_box_outlined, color: Colors.white)),

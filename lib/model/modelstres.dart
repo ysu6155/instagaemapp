@@ -47,13 +47,13 @@ void showStoreModal(String imageUrl, String name ,var context ) {
             children: [
               Container(
                 color: Colors.black.withOpacity(0.7),
-                padding: EdgeInsets.symmetric(vertical: 10, horizontal: 15),
+                padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 15),
                 child: Text(name,
-                  style: TextStyle(color: Colors.white, fontSize: 18),
+                  style: const TextStyle(color: Colors.white, fontSize: 18),
                 ),
               ),
               IconButton(
-                icon: Icon(Icons.close, color: Colors.white),
+                icon: const Icon(Icons.close, color: Colors.white),
                 onPressed: () {
                   Navigator.of(context).pop(); // إغلاق المودل عند الضغط على زر الإغلاق
                 },

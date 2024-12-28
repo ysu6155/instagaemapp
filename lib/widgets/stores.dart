@@ -13,7 +13,7 @@ class _StoresState extends State<Stores> {
   @override
   Widget build(BuildContext context) {
 
-    return Container(
+    return SizedBox(
       height: 120, // تغيير ارتفاع الـ Container
       child: ListView.builder(
         shrinkWrap: true,
@@ -29,7 +29,7 @@ class _StoresState extends State<Stores> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Stack(
-                    children: [CircleAvatar(
+                    children: [const CircleAvatar(
                         radius: 40,
                         backgroundColor: Colors.grey,
                       ),
@@ -44,10 +44,10 @@ class _StoresState extends State<Stores> {
                       )
                     ]
                   ),
-                  SizedBox(height: 5),
+                  const SizedBox(height: 5),
                   Text(
                     storesData[index].name,
-                    style: TextStyle(color: Colors.white, fontSize: 14), // تغيير حجم النص
+                    style: const TextStyle(color: Colors.white, fontSize: 14), // تغيير حجم النص
                   ),
                 ],
               ),

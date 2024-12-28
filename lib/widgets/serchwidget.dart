@@ -15,8 +15,8 @@ class serchwisget extends StatelessWidget {
               Expanded(
                 flex: 2,
                 child: GridView.builder(
-                  physics: NeverScrollableScrollPhysics(),
-                  gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                  physics: const NeverScrollableScrollPhysics(),
+                  gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                     crossAxisCount: 2, // 3 columns
                     crossAxisSpacing: 2.0, // Reduce space between columns to create overlap
                     mainAxisSpacing: 2.0,  // Reduce space between rows
@@ -36,13 +36,13 @@ class serchwisget extends StatelessWidget {
                   },
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 width: 2,
               ),
               Expanded(
                 child: GridView.builder(
-                  physics: NeverScrollableScrollPhysics(),
-                  gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                  physics: const NeverScrollableScrollPhysics(),
+                  gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                     crossAxisCount: 1, // 3 columns
                     crossAxisSpacing: 2.0, // Reduce space between columns to create overlap
                     mainAxisSpacing: 2.0,  // Reduce space between rows
@@ -72,8 +72,8 @@ class serchwisget extends StatelessWidget {
 
               Expanded(
                 child: GridView.builder(
-                  physics: NeverScrollableScrollPhysics(),
-                  gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                  physics: const NeverScrollableScrollPhysics(),
+                  gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                     crossAxisCount: 1, // 3 columns
                     crossAxisSpacing: 2.0, // Reduce space between columns to create overlap
                     mainAxisSpacing: 2.0,  // Reduce space between rows
@@ -93,14 +93,14 @@ class serchwisget extends StatelessWidget {
                   },
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 width: 2,
               ),
               Expanded(
                 flex: 2,
                 child: GridView.builder(
-                  physics: NeverScrollableScrollPhysics(),
-                  gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                  physics: const NeverScrollableScrollPhysics(),
+                  gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                     crossAxisCount: 2, // 3 columns
                     crossAxisSpacing: 2.0, // Reduce space between columns to create overlap
                     mainAxisSpacing: 2.0,  // Reduce space between rows

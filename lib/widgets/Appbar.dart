@@ -4,9 +4,8 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
   @override
   final Size preferredSize;
 
-  CustomAppBar({Key? key})
-      : preferredSize = Size.fromHeight(kToolbarHeight), // تحديد حجم الـ AppBar
-        super(key: key);
+  const CustomAppBar({super.key})
+      : preferredSize = const Size.fromHeight(kToolbarHeight);
 
   @override
   Widget build(BuildContext context) {
@@ -14,17 +13,17 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
       backgroundColor: Colors.black,
       title: Row(
         children: [
-          Icon(Icons.lock,color: Colors.white,size: 15,),
-          SizedBox(
+          const Icon(Icons.lock_open,color: Colors.white,size: 15,),
+          const SizedBox(
             width: 8,
           ),
-          Text(
+          const Text(
             'youssifshaban',
             style: TextStyle(color: Colors.white),
           ),
           IconButton(
             onPressed: () {},
-            icon: Icon(
+            icon: const Icon(
               Icons.arrow_drop_down,
               color: Colors.white,
             ),
@@ -35,7 +34,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
         Stack(
           clipBehavior: Clip.none,
           children: [IconButton(
-            icon: Icon(Icons.alternate_email, color: Colors.white),
+            icon: const Icon(Icons.alternate_email, color: Colors.white),
             onPressed: () {},
           ),
           Positioned(
@@ -43,21 +42,21 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
             child: Container(
               height: 20,
               width: 30,
-              child: Center(child: Text("+9",style: TextStyle(color: Colors.white),)),
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 color: Colors.red,
             borderRadius: BorderRadius.all(Radius.circular(10))
               ),
+              child: const Center(child: Text("+9",style: TextStyle(color: Colors.white),)),
             ),
           )
           ]
         ),
         IconButton(
-          icon: Icon(Icons.library_add, color: Colors.white),
+          icon: const Icon(Icons.library_add, color: Colors.white),
           onPressed: () {},
         ),
         IconButton(
-          icon: Icon(Icons.menu, color: Colors.white),
+          icon: const Icon(Icons.menu, color: Colors.white),
           onPressed: () {},
         ),
       ],
